@@ -15,7 +15,7 @@ const server = Bun.serve({
     if (path === '/' && method === 'GET') {
 
       return new Response(
-        '<h1>🏠 Halaman Utama (Bun)</h1><p>Selamat datang di server Bun + TypeScript!</p>',
+        '<h1> Halaman Utama (Bun)</h1><p>Selamat datang di server Bun + TypeScript!</p>',
         {
           headers: { 'Content-Type': 'text/html' }
         }
@@ -26,7 +26,7 @@ const server = Bun.serve({
     else if (path === '/about' && method === 'GET') {
 
       return new Response(
-        '<h1>📄 Tentang Kami (Bun)</h1><p>Routing manual dengan Bun sangat mudah!</p>',
+        '<h1> Tentang Kami (Bun)</h1><p>Routing manual dengan Bun sangat mudah!</p>',
         {
           headers: { 'Content-Type': 'text/html' }
         }
@@ -110,7 +110,7 @@ const server = Bun.serve({
 
     else {
       return new Response(
-        '<h1>❌ 404 - Halaman Tidak Ditemukan (Bun)</h1>',
+        '<h1> 404 - Halaman Tidak Ditemukan (Bun)</h1>',
         {
           status: 404,
           headers: { 'Content-Type': 'text/html' }
